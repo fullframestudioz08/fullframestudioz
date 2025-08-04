@@ -98,7 +98,7 @@
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <img src="img/12.jpg" class="img-fluid" alt="Image">
+                    <img src="https://ik.imagekit.io/fb5hy30dm/img/1.jpg?updatedAt=1754305406788" class="img-fluid" alt="Image">
                     <div class="carousel-caption">
                         <div class="p-3 mx-auto animated zoomIn" style="max-width: 900px;">
                             <div class="d-inline-block border-end-0 border-start-0 border-secondary p-2 mb-4"
@@ -120,7 +120,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/11.jpg" class="img-fluid" alt="Image">
+                    <img src="https://ik.imagekit.io/fb5hy30dm/img/2.jpg?updatedAt=1754305406788" class="img-fluid" alt="Image">
                     <div class="carousel-caption">
                         <div class="p-3 mx-auto animated zoomIn" style="max-width: 900px;">
                             <div class="d-inline-block border-end-0 border-start-0 border-secondary p-2 mb-5"
@@ -142,7 +142,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/3.jpg" class="img-fluid bg-secondary" alt="Image">
+                    <img src="https://ik.imagekit.io/fb5hy30dm/img/3.jpg?updatedAt=1754305406788" class="img-fluid bg-secondary" alt="Image">
                     <div class="carousel-caption">
                         <div class="p-3 mx-auto animated zoomIn" style="max-width: 900px;">
                             <div class="d-inline-block border-end-0 border-start-0 border-secondary p-2 mb-4"
@@ -202,7 +202,38 @@
 
                 </div>
 
-                <script>
+
+                 <script>
+    const container = document.getElementById('galleryContainer');
+    const baseURL = "https://ik.imagekit.io/fb5hy30dm/gallery";
+
+    for (let i = 1; i <= 12; i++) {
+        const colDiv = document.createElement('div');
+        colDiv.className = "col-md-6 col-lg-6 col-xl-3 wow fadeInUp";
+        colDiv.setAttribute('data-wow-delay', '0.2s');
+
+        const imageUrl = `${baseURL}/${i}.jpg`;
+
+        colDiv.innerHTML = `
+        <div class="gallery-item">
+            <div class="gallery-img">
+                <img class="img-fluid h-100 m-4" src="${imageUrl}" alt="Image ${i}">
+                <div class="hover-style"></div>
+                <div class="search-icon">
+                    <a href="${imageUrl}" data-lightbox="Gallery-1" class="my-auto">
+                        <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        `;
+
+        container.appendChild(colDiv);
+    }
+</script>
+
+
+                <!-- <script>
                     const container = document.getElementById('galleryContainer');
 
                     for (let i = 1; i <= 12; i++) {
@@ -223,20 +254,14 @@
                                     </a>
                                 </div>
                                 </div>
-                                <!--
-                                <div class="gallery-overlay bg-light border-secondary border-top-0 p-4"
-                                style="border-style: double;">
-                                <h5>Wedding on the beach</h5>
-                                <p class="text-dark mb-0">June 28, 2024</p>
-                                </div>
-                                -->
+                               
                             </div>
                            
                                          `;
 
                         container.appendChild(colDiv);
                     }
-                </script>
+                </script> -->
 
 
 
@@ -492,10 +517,10 @@
     <!-- Story Start -->
     <div class="container-fluid story position-relative py-5" id="weddingStory">
         <div class="position-absolute" style="top: -35px; right: 0;">
-            <img src="img/tamp-bg-1.png" class="img-fluid" alt="">
+            <img src="https://ik.imagekit.io/fb5hy30dm/img/tamp-bg-1.png?updatedAt=1754305424225" class="img-fluid" alt="">
         </div>
         <div class="position-absolute" style="top: -15px; left: 0; transform: rotate(150deg);">
-            <img src="img/tamp-bg-1.png" class="img-fluid" alt="">
+            <img src="https://ik.imagekit.io/fb5hy30dm/img/tamp-bg-1.png?updatedAt=1754305424225" class="img-fluid" alt="">
         </div>
         <div class="container position-relative py-5">
             <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -509,7 +534,7 @@
                 <div class="row wow fadeInUp" data-wow-delay="0.2s">
                     <div class="col-md-6 text-end border-0 border-top border-end border-secondary p-4">
                         <div class="d-inline-flex align-items-center h-100">
-                            <img src="img/story-1.jpg" class="img-fluid w-100 img-border" alt="First Meet">
+                            <img src="https://ik.imagekit.io/fb5hy30dm/img/story-1.jpg?updatedAt=1754305424225" class="img-fluid w-100 img-border" alt="First Meet">
                         </div>
                     </div>
                     <div class="col-md-6 border-start border-top border-secondary p-4 pe-0">
@@ -534,7 +559,7 @@
                     </div>
                     <div class="col-md-6 border-start border-top border-secondary p-4">
                         <div class="d-inline-flex align-items-center h-100">
-                            <img src="img/story-2.jpg" class="img-fluid w-100 img-border" alt="First Date">
+                            <img src="https://ik.imagekit.io/fb5hy30dm/img/story-2.jpg?updatedAt=1754305424225" class="img-fluid w-100 img-border" alt="First Date">
                         </div>
                     </div>
                 </div>
@@ -543,7 +568,7 @@
                 <div class="row wow fadeInUp" data-wow-delay="0.4s">
                     <div class="col-md-6 text-end border-end border-top border-secondary p-4 ps-0">
                         <div class="d-inline-flex align-items-center h-100">
-                            <img src="img/story-3.jpg" class="img-fluid w-100 img-border" alt="Proposal">
+                            <img src="https://ik.imagekit.io/fb5hy30dm/img/story-3.jpg?updatedAt=1754305424225" class="img-fluid w-100 img-border" alt="Proposal">
                         </div>
                     </div>
                     <div class="col-md-6 border-start border-top border-secondary p-4 pe-0">
@@ -568,7 +593,7 @@
                     </div>
                     <div class="col-md-6 border border-end-0 border-secondary p-4">
                         <div class="d-inline-flex align-items-center h-100">
-                            <img src="img/story-4.jpg" class="img-fluid w-100 img-border" alt="Engagement">
+                            <img src="https://ik.imagekit.io/fb5hy30dm/img/story-4.jpg?updatedAt=1754305424225" class="img-fluid w-100 img-border" alt="Engagement">
                         </div>
                     </div>
                 </div>
