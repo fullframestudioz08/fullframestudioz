@@ -89,7 +89,7 @@
 
 
     <!-- Carousel Start -->
-    <div class="container-fluid carousel-header px-0">
+    <!-- <div class="container-fluid carousel-header px-0">
         <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
@@ -172,7 +172,73 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-    </div>
+    </div>  -->
+
+      <div class="container-fluid carousel-header px-0">
+  <div id="carouselId" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <ol class="carousel-indicators" id="carouselIndicators"></ol>
+    <div class="carousel-inner" id="carouselInner" role="listbox"></div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<!-- Carousel JavaScript and Bootstrap Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  const totalSlides = 5;
+  const baseURL = "https://ik.imagekit.io/fb5hy30dm/img/";
+  const carouselInner = document.getElementById("carouselInner");
+  const indicators = document.getElementById("carouselIndicators");
+
+  const captions = [
+    { name: "Parul ❤️ Nitesh", top: "Together is a beautiful place to be.", bottom: "A New Chapter in Love." },
+    { name: "Akshay ❤️ AnuKriti", top: "We’re not just tying the knot, we’re weaving a story", bottom: "A Promise of Forever" },
+    { name: "Ankit ❤️ Ishika", top: "In your smile, I found my forever.", bottom: "Bound by Love" },
+    { name: "Ravi ❤️ Preeti", top: "Two hearts, one soul.", bottom: "Forever Begins Today" },
+    { name: "Aarav ❤️ Meera", top: "Walking together into forever.", bottom: "Love Sealed with Vows" }
+  ];
+
+  for (let i = 1; i <= totalSlides; i++) {
+    const li = document.createElement("li");
+    li.setAttribute("data-bs-target", "#carouselId");
+    li.setAttribute("data-bs-slide-to", i - 1);
+    if (i === 1) li.className = "active";
+    indicators.appendChild(li);
+
+    const div = document.createElement("div");
+    div.className = "carousel-item" + (i === 1 ? " active" : "");
+    div.innerHTML = `
+      <img src="${baseURL}${i}.jpg" class="img-fluid" alt="Image ${i}">
+      <div class="carousel-caption">
+        <div class="p-3 mx-auto animated zoomIn" style="max-width: 900px;">
+          <div class="d-inline-block border-end-0 border-start-0 border-secondary p-2 mb-4" style="border-style: double;">
+            <h4 class="text-white text fw-bold mb-0" style="letter-spacing: 3px;">${captions[i - 1]?.top || ''}</h4>
+          </div>
+          <h1 class="display-1 text-capitalize text-white mb-3">${captions[i - 1]?.name || 'Couple'}</h1>
+          <div class="d-inline-block border-end-0 border-start-0 border-secondary p-2 mb-4" style="border-style: double;">
+            <h4 class="text-white text fw-bold mb-0" style="letter-spacing: 3px;">${captions[i - 1]?.bottom || ''}</h4>
+          </div>
+          <div class="d-flex align-items-center justify-content-center">
+            <a class="btn btn-primary btn-primary-outline-0 py-3 px-5" href="#">Book Now</a>
+          </div>
+        </div>
+      </div>`;
+    carouselInner.appendChild(div);
+  }
+</script>
+
+     
+
+    
     <!-- Carousel End -->
 
 
@@ -382,9 +448,9 @@
 
 
     <div class="container-fluid position-relative overflow-hidden bg-secondary py-5" id="weddingAbout2">
-        <img src="img/bg-flower.png" class="img-fluid position-absolute top-0"
+        <img src="https://ik.imagekit.io/fb5hy30dm/img/bg-flower.png?updatedAt=1754305407004" class="img-fluid position-absolute top-0"
             style="right: -15px; transform: rotate(270deg); opacity: 0.5;" alt="">
-        <img src="img/bg-flower.png" class="img-fluid position-absolute"
+        <img src="https://ik.imagekit.io/fb5hy30dm/img/bg-flower.png?updatedAt=1754305407004" class="img-fluid position-absolute"
             style="bottom: 10px; left: -15px; transform: rotate(90deg); opacity: 0.5;" alt="">
 
         <div class="container py-5 position-relative">
@@ -392,7 +458,7 @@
                 <!-- Left Image -->
                 <div class="col-xl-6 wow fadeIn" data-wow-delay="0.1s">
                     <div class="border-white bg-primary" style="border-style: double;">
-                        <img src="img/about-1.jpg" class="img-fluid w-100" alt="About Full Frame Studioz">
+                        <img src="https://ik.imagekit.io/fb5hy30dm/img/about-1.JPG?updatedAt=1754305407464" class="img-fluid w-100" alt="About Full Frame Studioz">
                     </div>
                 </div>
 
@@ -673,11 +739,11 @@
     <div class="container-fluid wedding-timeline bg-secondary position-relative overflow-hidden py-5"
         id="weddingTimeline">
         <div class="position-absolute" style="top: 50%; left: -100px; transform: translateY(-50%); opacity: 0.5;">
-            <img src="img/wedding-bg.png" class="img-fluid" alt="">
+            <img src="https://ik.imagekit.io/fb5hy30dm/img/wedding-bg.png?updatedAt=1754305427071" class="img-fluid" alt="">
         </div>
         <div class="position-absolute"
             style="top: 50%; right: -160px; transform: translateY(-50%) rotate(335deg); opacity: 0.5;">
-            <img src="img/wedding-bg.png" class="img-fluid" alt="">
+            <img src="https://ik.imagekit.io/fb5hy30dm/img/wedding-bg.png?updatedAt=1754305427071" class="img-fluid" alt="">
         </div>
         <div class="container py-5">
             <div class="text-center mb-5">
