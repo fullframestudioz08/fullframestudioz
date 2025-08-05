@@ -47,13 +47,13 @@
         <div class="container-fluid">
             <div class="container px-0">
                 <nav class="navbar navbar-light navbar-expand-xl" id="navBar">
-                    <!-- <a href="index.html" class="navbar-brand">
+                    <a href="index.html" class="navbar-brand">
                         <h4 class="text-primary fw-bold mb-0"><strong class="text-dark">Full Frame
                                 Studioz</strong></h4>
-                    </a> -->
-                                <a href="index.html" class="navbar-brand">
+                    </a>
+                    <!-- <a href="index.html" class="navbar-brand">
                 <img src="img/logo.png" alt="Full Frame Studioz Logo" style="height: 100px;">
-            </a>
+            </a> -->
 
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarCollapse">
@@ -72,7 +72,7 @@
                         </div>
                         <div class="d-flex align-items-center flex-nowrap pt-xl-0">
                             <!-- <a href="#weddingRsvp" class=" text-dark"> <b>9811198961, 9896988191</b></a> -->
-                             <i class="fas fa-phone text-secondary me-2"></i><a href="tel:9811198961" class="text-dark">
+                            <i class="fas fa-phone text-secondary me-2"></i><a href="tel:9811198961" class="text-dark">
                                 <b>9811198961</b>
                             </a>,
                             <a href="tel:9896988191" class="text-dark">
@@ -174,49 +174,49 @@
         </div>
     </div>  -->
 
-      <div class="container-fluid carousel-header px-0">
-  <div id="carouselId" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-    <ol class="carousel-indicators" id="carouselIndicators"></ol>
-    <div class="carousel-inner" id="carouselInner" role="listbox"></div>
+    <div class="container-fluid carousel-header px-0">
+        <div id="carouselId" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <ol class="carousel-indicators" id="carouselIndicators"></ol>
+            <div class="carousel-inner" id="carouselInner" role="listbox"></div>
 
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-</div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
 
-<!-- Carousel JavaScript and Bootstrap Bundle -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Carousel JavaScript and Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<script>
-  const totalSlides = 5;
-  const baseURL = "https://ik.imagekit.io/fb5hy30dm/img/";
-  const carouselInner = document.getElementById("carouselInner");
-  const indicators = document.getElementById("carouselIndicators");
+    <script>
+        const totalSlides = 5;
+        const baseURL = "https://ik.imagekit.io/fb5hy30dm/img/";
+        const carouselInner = document.getElementById("carouselInner");
+        const indicators = document.getElementById("carouselIndicators");
 
-  const captions = [
-    { name: "Parul ❤️ Nitesh", top: "Together is a beautiful place to be.", bottom: "A New Chapter in Love." },
-    { name: "Akshay ❤️ AnuKriti", top: "We’re not just tying the knot, we’re weaving a story", bottom: "A Promise of Forever" },
-    { name: "Ankit ❤️ Ishika", top: "In your smile, I found my forever.", bottom: "Bound by Love" },
-    { name: "Ravi ❤️ Preeti", top: "Two hearts, one soul.", bottom: "Forever Begins Today" },
-    { name: "Aarav ❤️ Meera", top: "Walking together into forever.", bottom: "Love Sealed with Vows" }
-  ];
+        const captions = [
+            { name: "Parul ❤️ Nitesh", top: "Together is a beautiful place to be.", bottom: "A New Chapter in Love." },
+            { name: "Akshay ❤️ AnuKriti", top: "We’re not just tying the knot, we’re weaving a story", bottom: "A Promise of Forever" },
+            { name: "Ankit ❤️ Ishika", top: "In your smile, I found my forever.", bottom: "Bound by Love" },
+            { name: "Ravi ❤️ Preeti", top: "Two hearts, one soul.", bottom: "Forever Begins Today" },
+            { name: "Aarav ❤️ Meera", top: "Walking together into forever.", bottom: "Love Sealed with Vows" }
+        ];
 
-  for (let i = 1; i <= totalSlides; i++) {
-    const li = document.createElement("li");
-    li.setAttribute("data-bs-target", "#carouselId");
-    li.setAttribute("data-bs-slide-to", i - 1);
-    if (i === 1) li.className = "active";
-    indicators.appendChild(li);
+        for (let i = 1; i <= totalSlides; i++) {
+            const li = document.createElement("li");
+            li.setAttribute("data-bs-target", "#carouselId");
+            li.setAttribute("data-bs-slide-to", i - 1);
+            if (i === 1) li.className = "active";
+            indicators.appendChild(li);
 
-    const div = document.createElement("div");
-    div.className = "carousel-item" + (i === 1 ? " active" : "");
-    div.innerHTML = `
+            const div = document.createElement("div");
+            div.className = "carousel-item" + (i === 1 ? " active" : "");
+            div.innerHTML = `
       <img src="${baseURL}${i}.jpg" class="img-fluid" alt="Image ${i}">
       <div class="carousel-caption">
         <div class="p-3 mx-auto animated zoomIn" style="max-width: 900px;">
@@ -232,13 +232,13 @@
           </div>
         </div>
       </div>`;
-    carouselInner.appendChild(div);
-  }
-</script>
+            carouselInner.appendChild(div);
+        }
+    </script>
 
-     
 
-    
+
+
     <!-- Carousel End -->
 
 
@@ -259,29 +259,29 @@
 
             </div>
         </div>
-            <div class="row g-6">
+        <div class="row g-6">
 
 
-                <div id="galleryContainer" class="row">
+            <div id="galleryContainer" class="row">
 
 
 
-                </div>
+            </div>
 
 
-                 <script>
-    const container = document.getElementById('galleryContainer');
-    const baseURL = "https://ik.imagekit.io/fb5hy30dm/gallery";
+                <script>
+                const container = document.getElementById('galleryContainer');
+                const baseURL1 = "https://ik.imagekit.io/fb5hy30dm/gallery";
 
-    for (let i = 1; i <= 12; i++) {
-        const colDiv = document.createElement('div');
-        colDiv.className = "col-md-6 col-lg-6 col-xl-3 wow fadeInUp";
-        colDiv.setAttribute('data-wow-delay', '0.2s');
+                for (let i = 1; i <= 12; i++) {
+                    const colDiv = document.createElement('div');
+                    colDiv.className = "col-md-6 col-lg-6 col-xl-3 wow fadeInUp";
+                    colDiv.setAttribute('data-wow-delay', '0.2s');
 
-        const imageUrl = `${baseURL}/${i}.jpg`;
+                    const imageUrl = `${baseURL1}/${i}.jpg`;
 
-        colDiv.innerHTML = `
-        <div class="gallery-item">
+                    colDiv.innerHTML = `
+                 <div class="gallery-item">
             <div class="gallery-img">
                 <img class="img-fluid h-100 m-4" src="${imageUrl}" alt="Image ${i}">
                 <div class="hover-style"></div>
@@ -294,12 +294,16 @@
         </div>
         `;
 
-        container.appendChild(colDiv);
-    }
-</script>
+                    container.appendChild(colDiv);
+                }
+            </script>
 
 
-                <!-- <script>
+        
+
+
+
+            <!-- <script>
                     const container = document.getElementById('galleryContainer');
 
                     for (let i = 1; i <= 12; i++) {
@@ -327,19 +331,19 @@
 
                         container.appendChild(colDiv);
                     }
-                </script> -->
+                </script>
+ -->
 
 
 
 
 
-
-                <div class="col-12 text-center wow fadeIn" data-wow-delay="0.2s">
-                    <a class="btn btn-primary btn-primary-outline-0 py-3 px-5 me-2" href="gallery.html">View All <i
-                            class="fas fa-arrow-right"></i></a>
-                </div>
+            <div class="col-12 text-center wow fadeIn" data-wow-delay="0.2s">
+                <a class="btn btn-primary btn-primary-outline-0 py-3 px-5 me-2" href="gallery.html">View All <i
+                        class="fas fa-arrow-right"></i></a>
             </div>
-        
+        </div>
+
     </div>
     <!-- Gallery end -->
 
@@ -400,57 +404,59 @@
 
     <!-- Gallery Start -->
     <div class="container-fluid gallery position-relative py-5" id="weddingVideo">
-          <div class="container position-relative py-5">
+        <div class="container position-relative py-5">
             <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
                 <h1 class="display-2 text-dark">Cinematic Wedding Films</h1>
                 <p class="fs-5 text-dark">Watch beautifully crafted wedding stories captured by Ashish Thareja and Full
                     Frame Studioz — emotional, elegant, and timeless memories in motion.</p>
 
             </div>
-          </div>
-  <div class="row g-4"> <!-- g-4 for equal spacing between items -->
+        </div>
+        <div class="row g-4"> <!-- g-4 for equal spacing between items -->
 
-    <!-- Video 1 -->
-    <div class="col-sm-12 col-md-6 col-lg-4">
-      <div class="ratio ratio-16x9">
-        <iframe src="https://drive.google.com/file/d/1pS1ck9VR9vVsKJp08OqrurG-4mrRB7QV/preview"
-                allow="autoplay" allowfullscreen>
-        </iframe>
-      </div>
+            <!-- Video 1 -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://drive.google.com/file/d/1pS1ck9VR9vVsKJp08OqrurG-4mrRB7QV/preview"
+                        allow="autoplay" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://drive.google.com/file/d/1pS1ck9VR9vVsKJp08OqrurG-4mrRB7QV/preview"
+                        allow="autoplay" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Video 3 -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://drive.google.com/file/d/1pS1ck9VR9vVsKJp08OqrurG-4mrRB7QV/preview"
+                        allow="autoplay" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Button -->
+            <div class="col-12 text-center pt-3">
+                <a class="btn btn-primary py-3 px-5" href="#">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+        </div>
     </div>
-
-    <!-- Video 2 -->
-    <div class="col-sm-12 col-md-6 col-lg-4">
-      <div class="ratio ratio-16x9">
-        <iframe src="https://drive.google.com/file/d/1pS1ck9VR9vVsKJp08OqrurG-4mrRB7QV/preview"
-                allow="autoplay" allowfullscreen>
-        </iframe>
-      </div>
-    </div>
-
-    <!-- Video 3 -->
-    <div class="col-sm-12 col-md-6 col-lg-4">
-      <div class="ratio ratio-16x9">
-        <iframe src="https://drive.google.com/file/d/1pS1ck9VR9vVsKJp08OqrurG-4mrRB7QV/preview"
-                allow="autoplay" allowfullscreen>
-        </iframe>
-      </div>
-    </div>
-
-    <!-- Button -->
-    <div class="col-12 text-center pt-3">
-      <a class="btn btn-primary py-3 px-5" href="#">View All <i class="fas fa-arrow-right"></i></a>
-    </div>
-
-  </div>
-</div>
 
 
 
     <div class="container-fluid position-relative overflow-hidden bg-secondary py-5" id="weddingAbout2">
-        <img src="https://ik.imagekit.io/fb5hy30dm/img/bg-flower.png?updatedAt=1754305407004" class="img-fluid position-absolute top-0"
-            style="right: -15px; transform: rotate(270deg); opacity: 0.5;" alt="">
-        <img src="https://ik.imagekit.io/fb5hy30dm/img/bg-flower.png?updatedAt=1754305407004" class="img-fluid position-absolute"
+        <img src="https://ik.imagekit.io/fb5hy30dm/img/bg-flower.png?updatedAt=1754305407004"
+            class="img-fluid position-absolute top-0" style="right: -15px; transform: rotate(270deg); opacity: 0.5;"
+            alt="">
+        <img src="https://ik.imagekit.io/fb5hy30dm/img/bg-flower.png?updatedAt=1754305407004"
+            class="img-fluid position-absolute"
             style="bottom: 10px; left: -15px; transform: rotate(90deg); opacity: 0.5;" alt="">
 
         <div class="container py-5 position-relative">
@@ -458,7 +464,8 @@
                 <!-- Left Image -->
                 <div class="col-xl-6 wow fadeIn" data-wow-delay="0.1s">
                     <div class="border-white bg-primary" style="border-style: double;">
-                        <img src="https://ik.imagekit.io/fb5hy30dm/img/about-1.JPG?updatedAt=1754305407464" class="img-fluid w-100" alt="About Full Frame Studioz">
+                        <img src="https://ik.imagekit.io/fb5hy30dm/img/about-1.JPG?updatedAt=1754305407464"
+                            class="img-fluid w-100" alt="About Full Frame Studioz">
                     </div>
                 </div>
 
@@ -583,10 +590,12 @@
     <!-- Story Start -->
     <div class="container-fluid story position-relative py-5" id="weddingStory">
         <div class="position-absolute" style="top: -35px; right: 0;">
-            <img src="https://ik.imagekit.io/fb5hy30dm/img/tamp-bg-1.png?updatedAt=1754305424225" class="img-fluid" alt="">
+            <img src="https://ik.imagekit.io/fb5hy30dm/img/tamp-bg-1.png?updatedAt=1754305424225" class="img-fluid"
+                alt="">
         </div>
         <div class="position-absolute" style="top: -15px; left: 0; transform: rotate(150deg);">
-            <img src="https://ik.imagekit.io/fb5hy30dm/img/tamp-bg-1.png?updatedAt=1754305424225" class="img-fluid" alt="">
+            <img src="https://ik.imagekit.io/fb5hy30dm/img/tamp-bg-1.png?updatedAt=1754305424225" class="img-fluid"
+                alt="">
         </div>
         <div class="container position-relative py-5">
             <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -600,7 +609,8 @@
                 <div class="row wow fadeInUp" data-wow-delay="0.2s">
                     <div class="col-md-6 text-end border-0 border-top border-end border-secondary p-4">
                         <div class="d-inline-flex align-items-center h-100">
-                            <img src="https://ik.imagekit.io/fb5hy30dm/img/story-1.jpg?updatedAt=1754305424225" class="img-fluid w-100 img-border" alt="First Meet">
+                            <img src="https://ik.imagekit.io/fb5hy30dm/img/story-1.jpg?updatedAt=1754305424225"
+                                class="img-fluid w-100 img-border" alt="First Meet">
                         </div>
                     </div>
                     <div class="col-md-6 border-start border-top border-secondary p-4 pe-0">
@@ -625,7 +635,8 @@
                     </div>
                     <div class="col-md-6 border-start border-top border-secondary p-4">
                         <div class="d-inline-flex align-items-center h-100">
-                            <img src="https://ik.imagekit.io/fb5hy30dm/img/story-2.jpg?updatedAt=1754305424225" class="img-fluid w-100 img-border" alt="First Date">
+                            <img src="https://ik.imagekit.io/fb5hy30dm/img/story-2.jpg?updatedAt=1754305424225"
+                                class="img-fluid w-100 img-border" alt="First Date">
                         </div>
                     </div>
                 </div>
@@ -634,7 +645,8 @@
                 <div class="row wow fadeInUp" data-wow-delay="0.4s">
                     <div class="col-md-6 text-end border-end border-top border-secondary p-4 ps-0">
                         <div class="d-inline-flex align-items-center h-100">
-                            <img src="https://ik.imagekit.io/fb5hy30dm/img/story-3.jpg?updatedAt=1754305424225" class="img-fluid w-100 img-border" alt="Proposal">
+                            <img src="https://ik.imagekit.io/fb5hy30dm/img/story-3.jpg?updatedAt=1754305424225"
+                                class="img-fluid w-100 img-border" alt="Proposal">
                         </div>
                     </div>
                     <div class="col-md-6 border-start border-top border-secondary p-4 pe-0">
@@ -659,7 +671,8 @@
                     </div>
                     <div class="col-md-6 border border-end-0 border-secondary p-4">
                         <div class="d-inline-flex align-items-center h-100">
-                            <img src="https://ik.imagekit.io/fb5hy30dm/img/story-4.jpg?updatedAt=1754305424225" class="img-fluid w-100 img-border" alt="Engagement">
+                            <img src="https://ik.imagekit.io/fb5hy30dm/img/story-4.jpg?updatedAt=1754305424225"
+                                class="img-fluid w-100 img-border" alt="Engagement">
                         </div>
                     </div>
                 </div>
@@ -723,14 +736,15 @@
     </div> -->
 
     <div class="container-fluid bg-light py-5 wow fadeIn" data-wow-delay="0.1s" id="weddingBook">
-    <div class="container text-center">
-        <h2 class="display-5 text-dark mb-3">Book an Appointment</h2>
-        <p class="fs-5 text-muted mb-4">
-            Planning your big day? Schedule a personalized consultation with Full Frame Studioz and let's bring your vision to life.
-        </p>
-        <a href="book.html" class="btn btn-primary btn-lg px-4 py-2">Book Now</a>
+        <div class="container text-center">
+            <h2 class="display-5 text-dark mb-3">Book an Appointment</h2>
+            <p class="fs-5 text-muted mb-4">
+                Planning your big day? Schedule a personalized consultation with Full Frame Studioz and let's bring your
+                vision to life.
+            </p>
+            <a href="book.html" class="btn btn-primary btn-lg px-4 py-2">Book Now</a>
+        </div>
     </div>
-</div>
 
     <!-- Wedding Date -->
 
@@ -739,11 +753,13 @@
     <div class="container-fluid wedding-timeline bg-secondary position-relative overflow-hidden py-5"
         id="weddingTimeline">
         <div class="position-absolute" style="top: 50%; left: -100px; transform: translateY(-50%); opacity: 0.5;">
-            <img src="https://ik.imagekit.io/fb5hy30dm/img/wedding-bg.png?updatedAt=1754305427071" class="img-fluid" alt="">
+            <img src="https://ik.imagekit.io/fb5hy30dm/img/wedding-bg.png?updatedAt=1754305427071" class="img-fluid"
+                alt="">
         </div>
         <div class="position-absolute"
             style="top: 50%; right: -160px; transform: translateY(-50%) rotate(335deg); opacity: 0.5;">
-            <img src="https://ik.imagekit.io/fb5hy30dm/img/wedding-bg.png?updatedAt=1754305427071" class="img-fluid" alt="">
+            <img src="https://ik.imagekit.io/fb5hy30dm/img/wedding-bg.png?updatedAt=1754305427071" class="img-fluid"
+                alt="">
         </div>
         <div class="container py-5">
             <div class="text-center mb-5">
@@ -916,7 +932,7 @@
                             <div class="team-img-main">
                                 <img src="img/bridesmaid-3.png" class="img-fluid w-100" alt="">
                             </div>
-                            
+
                             <div class="team-img-bg position-absolute"
                                 style="bottom: -30px; left: -100px; transform: rotate(50deg); z-index: 1;">
                                 <img src="img/team-1-bg.png" class="img-fluid" alt="">
