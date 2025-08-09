@@ -194,17 +194,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        const totalSlides = 5;
+        const totalSlides = 6;
         const baseURL = "https://ik.imagekit.io/fb5hy30dm/img/";
         const carouselInner = document.getElementById("carouselInner");
         const indicators = document.getElementById("carouselIndicators");
 
         const captions = [
             { name: "Parul ❤️ Nitesh", top: "Together is a beautiful place to be.", bottom: "A New Chapter in Love." },
-            { name: "Akshay ❤️ AnuKriti", top: "We’re not just tying the knot, we’re weaving a story", bottom: "A Promise of Forever" },
+            { name: "Rahul ❤️ Kajal", top: "We’re not just tying the knot, we’re weaving a story", bottom: "A Promise of Forever" },
             { name: "Ankit ❤️ Ishika", top: "In your smile, I found my forever.", bottom: "Bound by Love" },
-            { name: "Ravi ❤️ Preeti", top: "Two hearts, one soul.", bottom: "Forever Begins Today" },
-            { name: "Aarav ❤️ Meera", top: "Walking together into forever.", bottom: "Love Sealed with Vows" }
+            { name: "x ❤️ y", top: "Two hearts, one soul.", bottom: "Forever Begins Today" },
+            { name: "Palak ❤️ Madhur", top: "Walking together into forever.", bottom: "Love Sealed with Vows" },
+             { name: "Aman ❤️ Kanika", top: "Two hearts, one soul.", bottom: "Forever Begins Today" },
         ];
 
         for (let i = 1; i <= totalSlides; i++) {
@@ -217,14 +218,14 @@
             const div = document.createElement("div");
             div.className = "carousel-item" + (i === 1 ? " active" : "");
             div.innerHTML = `
-      <img src="${baseURL}${i}.jpg" class="img-fluid" alt="Image ${i}">
-      <div class="carousel-caption">
-        <div class="p-3 mx-auto animated zoomIn" style="max-width: 900px;">
-          <div class="d-inline-block border-end-0 border-start-0 border-secondary p-2 mb-4" style="border-style: double;">
+            <img src="${baseURL}${i}.jpg" class="img-fluid" alt="Image ${i}">
+             <div class="carousel-caption">
+              <div class="p-3 mx-auto animated zoomIn" style="max-width: 900px;">
+              <div class="d-inline-block border-end-0 border-start-0 border-secondary p-2 mb-4" style="border-style: double;">
             <h4 class="text-white text fw-bold mb-0" style="letter-spacing: 3px;">${captions[i - 1]?.top || ''}</h4>
-          </div>
-          <h1 class="display-1 text-capitalize text-white mb-3">${captions[i - 1]?.name || 'Couple'}</h1>
-          <div class="d-inline-block border-end-0 border-start-0 border-secondary p-2 mb-4" style="border-style: double;">
+             </div>
+            <h1 class="display-1 text-capitalize text-white mb-3">${captions[i - 1]?.name || 'Couple'}</h1>
+             <div class="d-inline-block border-end-0 border-start-0 border-secondary p-2 mb-4" style="border-style: double;">
             <h4 class="text-white text fw-bold mb-0" style="letter-spacing: 3px;">${captions[i - 1]?.bottom || ''}</h4>
           </div>
           <div class="d-flex align-items-center justify-content-center">
@@ -268,6 +269,38 @@
 
             </div>
 
+            <!-- <script>
+    const container = document.getElementById('galleryContainer');
+    const baseURL1 = "https://ik.imagekit.io/fb5hy30dm/gallery";
+
+    for (let i = 1; i <= 12; i++) {
+        const colDiv = document.createElement('div');
+        colDiv.className = "col-md-6 col-lg-6 col-xl-3 wow fadeInUp";
+        colDiv.setAttribute('data-wow-delay', '0.2s');
+
+        // Add leading zero for numbers < 10
+        const imageNumber = i.toString().padStart(2, '0');
+        const imageUrl = `${baseURL1}/${imageNumber}.jpg`;
+
+        colDiv.innerHTML = `
+            <div class="gallery-item">
+                <div class="gallery-img">
+                    <img class="img-fluid h-100 m-4" src="${imageUrl}" alt="Image ${i}">
+                    <div class="hover-style"></div>
+                    <div class="search-icon">
+                        <a href="${imageUrl}" data-lightbox="Gallery-1" class="my-auto">
+                            <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        container.appendChild(colDiv);
+    }
+</script>
+ -->
+
 
                 <script>
                 const container = document.getElementById('galleryContainer');
@@ -296,8 +329,7 @@
 
                     container.appendChild(colDiv);
                 }
-            </script>
-
+            </script> 
 
         
 
@@ -898,7 +930,7 @@
                     <div class="team-item">
                         <div class="team-img">
                             <div class="team-img-main">
-                                <img src="img/bridesmaid-team-2.png" class="img-fluid w-100" alt="">
+                                <img src="img/bridesmaid-22.png" class="img-fluid w-100" alt="">
                             </div>
                             <div class="team-img-bg position-absolute"
                                 style="bottom: -30px; left: -100px; transform: rotate(50deg); z-index: 1;">
